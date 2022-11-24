@@ -55,7 +55,7 @@ ROOT_URLCONF = 'playgroundint.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [r'C:\Users\LENOVO\Documents\Python - coderhouse\19 - Playground Intermedio\playgroundint\curso\templates'],
+        'DIRS': [r'C:\Users\LENOVO\Documents\Python - coderhouse\19 - Playground Intermedio\playgroundint\playgroundint\templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
