@@ -23,11 +23,11 @@
         <nav class="navbar navbar-light bg-light static-top">
             <div class="container">
                 <!-- Estos "a" son botones de navegación-->
-                <a class="navbar-brand" href="#!">Inicio</a>
-                <a class="navbar-brand" href="cursos/"> Cursos </a>
-                <a class="navbar-brand" href="estudiante/"> Estudiantes </a>
-                <a class="navbar-brand" href="profesores"> Profesores </a>
-                <a class="navbar-brand" href="entregables"> Entregables </a>
+                <a class="navbar-brand" href="{% url 'coder-inicio' %}">Inicio</a>
+                <a class="navbar-brand" href="{% url 'coder-cursos' %}"> Cursos </a>
+                <a class="navbar-brand" href="{% url 'coder-estudiante' %}"> Estudiantes </a>
+                <a class="navbar-brand" href="{% url 'coder-profesores' %}"> Profesores </a>
+                <a class="navbar-brand" href="{% url 'coder-entregables' %}"> Entregables </a>
                 <a class="btn btn-primary" href="#signup">Sign Up</a>
             </div>
         </nav>
@@ -72,10 +72,11 @@
                 </div>
             </div>
         </header>
-        <!-- Icons Grid-->
-        <!-- Image Showcases-->
-        <!-- Testimonials-->
-        <!-- Call to Action-->
+        
+        {% block ContenidoModificar%}
+        
+        {% endblock %}
+
         <!-- Footer-->
         <footer class="footer bg-light">
             <div class="container">

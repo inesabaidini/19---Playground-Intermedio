@@ -5,17 +5,17 @@ from curso.models import *
 # Create your views here.
 
 def inicio(request):
-    return render(request, 'curso/index.html')
+    return render(request, 'curso/base.html')
 
 def cursos(request):
-    return HttpResponse('Bienvenidx /n Estás en cursos')
+    return render(request, 'curso/cursos.html')
 
 def estudiante(request):
-    return HttpResponse('Bienvenidx /n Estás en alumnos')
+    return render(request, 'curso/estudiante.html')
 
 def profesores(request):
-    return HttpResponse('Bienvenidx /n Estás en profesores')
+    return render(request, 'curso/profesores.html')
 
 def entregables(request):
-    return HttpResponse('Bienvenidx /n Estás en entregables')
+    return render(request, 'curso/entregables.html')
 
