@@ -1,0 +1,15 @@
+{% extends 'curso/base.html' %}
+{% load static %}
+{% block ContenidoModificar %}
+
+<form action="/aplicacion/cursos/crear/" method="POST">
+
+    {% csrf_token %}
+
+    <p> Curso <input type="text" name="curso"></p>
+    <p> Camada <input type="number" name="camada"></p>
+    <input type="submit" value="crear curso">
+
+</form>
+
+{% endblock %}
